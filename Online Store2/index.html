@@ -1,0 +1,144 @@
+<html lang="en">
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>My Bootstrap website</title>
+        <!-- bootstrap CDN-Content Delivery Network -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <style>
+            #collections {
+                text-align: center;
+                font-size: 1.5rem;
+                color: white;
+                margin-top: 1rem;
+                cursor: pointer; 
+                width: 30rem;
+                border-radius: 0.5rem; 
+                background-color: rgb(143, 141, 141); 
+                height: 2.5rem;
+                border-width: 0.2rem;
+                border-color: black;
+            }
+
+            #collections:hover {
+                background-color: rgb(7, 7, 15);
+            }
+
+            #collections option{
+                background-color: grey;
+            }
+
+            #collections:focus {
+                border: 0.2rem ;
+                border-color:  solid black;
+                border-style:dashed;
+            }
+
+
+            .centerToggle {
+                display: flex;
+                justify-content: center;
+
+            }
+
+            
+
+
+
+            
+        </style>
+    </head>
+
+    <body>
+        <section class="d-flex ms-3 mt-4 gap-5 bg-light">
+            <section>
+                <img src="logo.jpeg" class="img-fluid" style="width: 11rem;" alt="Logo">
+            </section>
+
+            <section class="container d-flex justify-content-end gap-4">
+                <button class="btn btn-outline-secondary " type="button">
+                    <i class="bi bi-search"> search</i>
+                </button>
+
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="bi bi-person"></i>
+                </button>
+
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="bi bi-cart"></i>
+                </button>
+            </section>
+        </section>
+
+
+
+
+
+        <section >
+            <section  class="text-center mb-2" style="background-image: url('forBackgroundBoots.jpg'); background-size: cover; margin-top: 1rem; ">
+
+
+                <p class="fs-2 fw-bolder text-white bg-dark  " style="font-family: Garamond;">OLIGAH
+                    <span class="ms-2">ELECTRONICS</span></p>
+
+                <p class="fs-3 fst-italic" style="font-family: victoria;">Where 
+                    <span class="fw-bold fs-2">Innovation</span> meets
+                    <span class="fw-bold fs-2">Durability</span>
+                </p> 
+
+
+            </section>
+
+            <section>
+                <!-- <section >
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">Browse Collections</button>
+                
+                <ul class="dropdown-menu" aria-labelledby= "dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#"> All </a></li>
+                    <li><a class="dropdown-item" href="#">Gnerators</a></li>
+                </ul>
+                </section> -->
+
+
+
+
+                <section class="centerToggle">
+                    <!-- <label for="collections">Browse Collections</label> -->
+                    
+                    <select id="collections" name="collections" class="collections">
+                        
+                        <option value="" disabled selected>Browse Collections</option>
+                        <option value="all">All</option>
+                        <option value="generators">Generators</option>
+                        <option value="water-pumps">Water-pumps</option>
+                        <option value="water-pumps">Solar Panels</option>
+                        <option value="others">Others</option>
+                        
+                    </select>
+                </section>
+
+
+
+                
+
+
+
+                
+               
+            </section>
+
+
+
+
+        </section>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
